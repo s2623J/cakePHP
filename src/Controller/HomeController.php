@@ -15,6 +15,17 @@ class HomeController extends AppController
     {
         // $this->autoRender = false; // Prevents corresponding page in "/home" directory from rendering
         // echo '<h1>Hello! ;-)</h1>';
+
+        // Sending parameters from this action to the view file
+        // $name = 'Online web tutorial';
+        // $email = 'online@tutorial.com';
+        // $this->set('name', $name);
+        // $this->set('email', $email);
+        $data = array(
+            'name' => 'Online web tutorial',
+            'email' => 'online@tutorial.com'
+        );
+        $this->set('data', $data);
     }
 
     public function sayWelcomeHello()

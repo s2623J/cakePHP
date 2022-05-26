@@ -1,0 +1,10 @@
+
+    Notes:
+    ------
+    CakePHP Definition: PHP MVC framework
+
+    Installation:
+        Install XAMPP with: "https://www.apachefriends.org/download.html"
+        Install Composer with: "https://getcomposer.org/Composer-Setup.exe"
+        Install CakePHP with: "composer create-project --prefer-dist cakephp/app:~4.0 my_app_name"
+        Browser navigate to: "http://localhost/cakePHP/cake_php_course/"

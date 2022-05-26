@@ -9,6 +9,9 @@ class HomeController extends AppController
     public function initialize(): void  // Use Initialize instead of a constructor function
     {
         parent::initialize();
+
+        // Setting custom layout
+        $this->viewBuilder()->setLayout('layout');
     }
 
     public function sayHello(): void
@@ -26,11 +29,19 @@ class HomeController extends AppController
             'email' => 'online@tutorial.com'
         );
         $this->set('data', $data);
+        $this->set('title', 'Welcome to the Say Hello page!');
     }
 
     public function sayWelcomeHello()
     {
         // Home/say_welcome_hello.php
         
+    }
+
+    public function sayWelcome(): void
+    {
+        // say_welcome.php
+        // $this->viewBuilder()->setLayout('layout'); // Cherry pick the new custom layout
+        $this->set('title', 'Welcome to the Say Welcome page!');
     }
 }

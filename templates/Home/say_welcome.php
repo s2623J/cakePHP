@@ -5,6 +5,4 @@
     }
 ?>
 
-Say hello page
-
-<?php print_r($data)?>
+<h4>Welcome to Say Welcome Page!</h4>

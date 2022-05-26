@@ -8,3 +8,28 @@
         Install Composer with: "https://getcomposer.org/Composer-Setup.exe"
         Install CakePHP with: "composer create-project --prefer-dist cakephp/app:~4.0 my_app_name"
         Browser navigate to: "http://localhost/cakePHP/cake_php_course/"
+        Ensure "tmp" and "logs" folders aare writeable (affects performance)
+        Customize credentials for MySQL DB in app_local.php lines 47 - 52
+            
+    Naming Conventions:
+        Controller class names are PascalCase, and end in Controller
+            (ie. "UsersController" and "MenuLinksController")
+        URLs are lowercase and dashed using the DashedRoute class
+            (ie. "/menu-links/view-all" == MenuLinksController::viewAll())
+        Table names corresponding to CakePHP models are plural and underscored
+            (ie. "users", "menu_links", and "user_favorite_pages")
+        Table class names are plural, PascalCase and end in Table
+            (ie. "UsersTable", "MenuLinksTable", and "UserFavoritePagesTable")
+        Column names with two or more words are underscored, for example, first_name.
+        View template files are named after the controller functions they display, in an underscored form
+            (ie. The "viewAll()" function of the "ArticlesController" == "templates/Articles/view_all.php")
+        Plugins are prefixed with “cakephp-” in the package name. Example:
+            // Bad                  // Good
+            cakephp/foo-bar         your-name/cakephp-foo-bar
+
+    Routes:
+        Route path name should be based off of the action name
+        
+
+
+

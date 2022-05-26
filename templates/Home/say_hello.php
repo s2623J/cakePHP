@@ -1,0 +1,1 @@
+This is plain text rendered in the "say_hello.php" page

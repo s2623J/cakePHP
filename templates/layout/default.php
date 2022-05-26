@@ -48,6 +48,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <main class="main">
         <div class="container">
             <?= $this->Flash->render() ?>
+            <h4>Welcome to an added piece of content!</h4>
             <?= $this->fetch('content') ?>
         </div>
     </main>

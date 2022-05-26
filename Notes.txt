@@ -29,7 +29,10 @@
 
     Routes:
         Route path name should be based off of the action name
-        
 
+    VsCode:
+        Pressing "Ctrl" + mouse-clicking the class method, will open the page 
+            and method location in deditor
+        
 
 

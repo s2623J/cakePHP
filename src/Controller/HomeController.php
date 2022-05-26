@@ -13,8 +13,8 @@ class HomeController extends AppController
 
     public function sayHello(): void
     {
-        $this->autoRender = false;
-        echo '<h1>Hello! ;-)</h1>';
+        // $this->autoRender = false; // Prevents corresponding page in "/home" directory from rendering
+        // echo '<h1>Hello! ;-)</h1>';
     }
 
     public function sayWelcomeHello()

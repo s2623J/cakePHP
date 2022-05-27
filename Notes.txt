@@ -33,6 +33,9 @@
     VsCode:
         Pressing "Ctrl" + mouse-clicking the class method, will open the page 
             and method location in deditor
+
+    Layouts:
+        Require HTML "helpers" to link all the required resource files (ie. CSS, JS, etc)
         
 
 

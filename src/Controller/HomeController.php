@@ -11,7 +11,8 @@ class HomeController extends AppController
         parent::initialize();
 
         // Setting custom layout
-        $this->viewBuilder()->setLayout('layout');
+        // $this->viewBuilder()->setLayout('layout');
+        $this->viewBuilder()->setLayout('custom/layout');
     }
 
     public function sayHello(): void

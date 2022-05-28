@@ -13,6 +13,11 @@
 <!-- Page Content-->
 <section class="pt-4">
     <div class="container px-lg-5">
+        <!-- Block content -->
+        <?php $this->element('headings', [
+            "items" => ["Dev1", "Dev2", "Dev3"]
+        ]) ?>
+        <?= $this->fetch('heading2') ?>
         <!-- Page Features-->
         <div class="row gx-lg-5">
             <div class="col-lg-6 col-xxl-4 mb-5">

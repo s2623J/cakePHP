@@ -43,14 +43,24 @@
             Like "mini-views"
             Can accept parameters
             Placed in the "templates/elements" folder
-            Generated from static method from View.php
+            Generated from static method of View.php
                 All details of Element are detailed in comment section
+            Element file returns markup with template variables
             Example:
                 <?php echo $this->element('jumbotron.php'); ?>
                 Cake\View\View::elements(string $elementPath, array $data, array $options = []);
         Blocks:
             Define Blocks/Slots in a layout 
-            
+            Unlike elements, there may be many blocks contained in a single block file
+            Blocks are defined with PHP tags:
+                Example:
+                    <?php $this->start('block_name') ?>
+                        // Bock Definition here 
+                    <?php $this->end(); ?>
+            Block are specifically called with a FETCH command:
+                Example (need BOTH):
+                    <?= $this->element('headings') ?> <!-- Pulls in heading block(s) page -->
+                    <?= $this->fetch('heading1') ?> <!-- Pulls in specified block -->
         Cells:
 
     Tips:

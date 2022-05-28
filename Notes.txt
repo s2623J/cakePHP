@@ -36,6 +36,25 @@
 
     Layouts:
         Require HTML "helpers" to link all the required resource files (ie. CSS, JS, etc)
-        
 
+    Templates:
+        Elements:
+            Reusable
+            Like "mini-views"
+            Can accept parameters
+            Placed in the "templates/elements" folder
+            Generated from static method from View.php
+                All details of Element are detailed in comment section
+            Example:
+                <?php echo $this->element('jumbotron.php'); ?>
+                Cake\View\View::elements(string $elementPath, array $data, array $options = []);
+        Blocks:
+            Define Blocks/Slots in a layout 
+            
+        Cells:
 
+    Tips:
+        "echo" statements:
+            These are the same:
+                <?php echo $this->element('jumbotron'); ?>
+                <?= $this->element('jumbotron'); ?>

@@ -62,9 +62,16 @@
                     <?= $this->element('headings') ?> <!-- Pulls in heading block(s) page -->
                     <?= $this->fetch('heading1') ?> <!-- Pulls in specified block -->
         Cells:
+            Use view logic
+            Act as mini controllers that render templates
+            Built with extending the "Cell" class
+            Used as components when interacting with:
+                View logic (namespace source>view>cell) (ie. cell controller)
+                Rendering (namespace templates>cell>data) (ie. cell view)
+                Layout (namespace templates>layout>custom) (ie. template)
+            Example: shopping cart
 
     Tips:
-        "echo" statements:
-            These are the same:
-                <?php echo $this->element('jumbotron'); ?>
-                <?= $this->element('jumbotron'); ?>
+        These are the same:
+            <?php echo $this->element('jumbotron'); ?>
+            <?= $this->element('jumbotron'); ?>

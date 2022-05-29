@@ -13,7 +13,9 @@
 <!-- Page Content-->
 <section class="pt-4">
     <div class="container px-lg-5">
-
+        <img src="<?= $base_url ?>webroot/img/bird.jpg" style="">
+        <img src="<?= APP_BASE_URL ?>webroot/img/bird.jpg" style="">
+    
         <!-- Block content -->
         <?php $this->element('headings', [
             "items" => ["Dev1", "Dev2", "Dev3"]
@@ -79,3 +81,8 @@
         </div>
     </div>
 </section>
+
+<?= $this->cell('Data::sayMessage', [
+        "message" => "This is a passed param say_hello string.",
+        "devs" => ['dev1', 'dev2', 'dev3', 'dev4']
+    ])->render(); ?> <!-- Render method will automatically call sayMessage() -->

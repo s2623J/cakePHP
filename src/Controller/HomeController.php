@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Routing\Router;
 
 class HomeController extends AppController
 {
@@ -13,6 +14,7 @@ class HomeController extends AppController
         // Setting custom layout
         // $this->viewBuilder()->setLayout('layout');
         $this->viewBuilder()->setLayout('custom/layout');
+        $this->base_url = Router::url('/');
     }
 
     public function sayHello(): void
@@ -25,6 +27,8 @@ class HomeController extends AppController
         // $email = 'online@tutorial.com';
         // $this->set('name', $name);
         // $this->set('email', $email);
+        $this->set('base_url', $this->base_url);
+
         $data = array(
             'name' => 'Online web tutorial',
             'email' => 'online@tutorial.com'

@@ -34,9 +34,13 @@
                 </div>
             </div>
         </nav>
-        <!-- Page Content-->
+        <!-- Page Content -->
         <?= $this->fetch('content') ?>
         <?= $this->cell('Data')->render(); ?> <!-- Render method will automatically call display() -->
+        <?= $this->cell('Data::sayMessage')->render(); ?> <!-- Render method will automatically call sayMessage() -->
+        <?= $this->cell('Data::sayMessage', [
+                "message" => "This is a passed param string."
+            ])->render(); ?> <!-- Render method will automatically call sayMessage() -->
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>

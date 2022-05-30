@@ -1,1 +1,1 @@
-<h3>Message: <?= $welcome_msg ?></h3>
+<h3><!-- Message:  --><?= $welcome_msg ?></h3>

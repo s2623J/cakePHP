@@ -1,1 +1,1 @@
-<h3>Number of Developers: <?= $dev_count ?></h3>
+<h3><!-- Number of Developers:  --><?= $dev_count ?></h3>

@@ -49,4 +49,29 @@ class HomeController extends AppController
         // $this->viewBuilder()->setLayout('layout'); // Cherry pick the new custom layout
         $this->set('title', 'Welcome to the Say Welcome page!');
     }
+
+    public function myTrail()
+    {
+        // my_trail.php
+
+    }
+
+    public function dashboard()
+    {
+        # code...
+    }
+
+    public function myMessage()
+    {
+        // my_message.php
+        $this->Flash->sayHello('The user has been saved.', [
+            'key' => 'custom_key',
+            'params' => [
+                'name' => 'Spike',
+                'email' => 'test@test.com'
+            ]
+        ]);
+        // $this->Flash->error('Something wrong happened.');
+        // $this->Flash->sayHello('Saying hello!');
+    }
 }

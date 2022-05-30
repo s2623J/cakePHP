@@ -22,17 +22,19 @@
         public function display(): void
         {
             // Set value count
-            $this->set('dev_count', count($this->developer));
+            // $this->set('dev_count', count($this->developer));
+            $this->set('dev_count', '');
         }
 
         public function sayMessage($message = null, $devs = null): void
         {
             // say_message.php
-            $msg = "Welcome to a new view cell!";
+            // $msg = "Welcome to a new view cell!";
             // isset($message) ? $this->set("welcome_msg", $message) : 
             //     $this->set("welcome_msg", $msg);
             // print_r($devs);
-            isset($devs) ? $this->set("welcome_msg", $devs[0]) : 
-                $this->set("welcome_msg", $msg);
+            // isset($devs) ? $this->set("welcome_msg", $message) : 
+            //     $this->set("welcome_msg", $msg);
+            $this->set("welcome_msg", '');
         }
     }

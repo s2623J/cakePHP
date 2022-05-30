@@ -71,6 +71,26 @@
                 Layout (namespace templates>layout>custom) (ie. template)
             Example: shopping cart
 
+    Images:
+        Should use a base_url constant. Preferably derived as a global constant from paths.php
+
+    Application Helpers:
+        Reference: https://book.cakephp.org/4/en/views/helpers.html
+        Load custom helpers in the AppView.php page in the view folder
+        Helper Types:
+            Breadcrumbs
+            Flash
+            Form
+            Html
+            Number
+            Paginator
+            Text
+            Time
+            Url
+        Flash Messages:
+            Documentation: https://book.cakephp.org/4/en/views/helpers/flash.html#namespace-Cake\View\Helper
+            
+
     Tips:
         These are the same:
             <?php echo $this->element('jumbotron'); ?>

@@ -89,7 +89,15 @@
             Url
         Flash Messages:
             Documentation: https://book.cakephp.org/4/en/views/helpers/flash.html#namespace-Cake\View\Helper
+        UrlHelper:
+            Helps generate urls with 4 methods:
+                build
+                image
+                script
+                css
+            Used to create a url containing everything but "http://localhost"
             
+
 
     Tips:
         These are the same:

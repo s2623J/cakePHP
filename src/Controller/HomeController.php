@@ -74,4 +74,9 @@ class HomeController extends AppController
         // $this->Flash->error('Something wrong happened.');
         // $this->Flash->sayHello('Saying hello!');
     }
+
+    public function myUrl()
+    {
+        $this->set('message', 'We are using UrlHelper');
+    }
 }

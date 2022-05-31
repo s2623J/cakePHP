@@ -79,4 +79,10 @@ class HomeController extends AppController
     {
         $this->set('message', 'We are using UrlHelper');
     }
+
+    public function myForm()
+    {
+        // my_form.php
+        $this->set('message', 'We are using FormHelper');
+    }
 }

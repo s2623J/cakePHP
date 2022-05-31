@@ -95,7 +95,8 @@
                 image
                 script
                 css
-            Used to create a url containing everything but "http://localhost"
+            Used to construct urls containing everything but "http://domain_name"
+        FormHelper:
             
 
 
